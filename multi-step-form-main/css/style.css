@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #737373;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-card {
+  width: 850px;
+  height: 600px;
+  padding: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  border-radius: 20px;
+}
+.card-left {
+  display: flex;
+  flex-direction: column;
+  background: url(../assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+
+  border-radius: 10px;
+  gap: 2rem;
+}
+.left-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.left-cards button {
+  font-size: 20px;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  background: #00297a;
+  border: 2px solid #fff;
+}
+/* Rang buttonga active qoshish */
+.rang.active {
+  color: #000;
+  border: none;
+  background: #44b4d6;
+}
+.left-cards div {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.left-cards div h3 {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #737373;
+}
+.left-cards div span {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/* card right */
+/* #step1{
+  display: none;
+} */
+.card-right{
+  position: relative;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.card-title{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  gap: 2px;
+}
+.card-title p{
+  color: #737373;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+form .inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+form .inputs input{
+  width: 300px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid #737373;
+}
+.card-btn{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 9rem;
+  bottom: 0;
+  right: 70px;
+}
+.card-btn button{
+  width: 80px;
+  height: 40px;
+  /* padding: 10px 15px; */
+  color: #fff;
+  background: #00297a;
+  border-radius:5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* step2 */
+#step2 .card-input{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#step2 .card-input .cards{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+#step2 .card-input .cards .card{
+  padding:40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #737373;
+  border-radius: 8px;
+  gap: 2rem;
+  cursor: pointer;
+  transition: 1s;
+  
+}
+#step2 .card-input .cards .card:hover{
+  border: 2px solid #00297a;
+}
+#step2 .card-input .cards .card img{
+  width: 40px;
+}
+#step2 .card-input .cards .card p{
+  color: #737373;
+}
+.checked-cards{
+  width: 440px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #737373;
+  padding: 10px;
+  border-radius: 5px;
+}
+.checked-cards input{
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background: #00297a;
+  border-radius: 10px;
+  appearance:none;
+  cursor: pointer;
+  /* transition: 1s; */
+}
+.checked-cards input:checked {
+  background: #22d1e1;
+}
+.checked-cards input::before{
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 1s;
+}
+.checked-cards input:checked::before{
+  left: 20px;
+}
+.card-btn .back{
+  font-weight: bold;
+  font-size: 16px;
+  background: #fff;
+  color: #737373;
+  transition: 0.5s;
+}
+.card-btn .back:hover{
+  color: #00297a;
+}
+
+
+/* step3 */
+#step3 .card-input{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;  
+}
+#step3 .card-input .card{
+  width: 400px;
+  border: 1px solid #737373;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#step3 .card-input .card:hover{
+  border: 2px solid #00297a;
+}
+#step3 .card-input .card p{
+  color: #00297a;
+}
+#step3 .card-input .card .card-msg{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+#step3 .card-input .card .card-msg div{
+  display: flex;
+  flex-direction: column;
+}
+#step3 .card-input .card .card-msg div p{
+  color: #737373;
+}
+/* step4 */
+#step4{
+  gap: 0;
+  justify-content: space-evenly;
+}
+#step4 .card-input{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#step4  .card-input .money-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 10px 20px;
+  width: 400px;
+  background: #ecdede;
+  border-radius: 5px;
+}
+#step4  .card-input .money-card .arcade{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+#step4  .card-input .money-card .arcade p{
+  color: #00297a;
+  font-weight: bold;
+}
+#step4  .card-input .money-card .arcade div a{
+  text-decoration: none;
+  transition: 1s;
+}
+#step4  .card-input .money-card .arcade div a:hover{
+  text-decoration: underline;
+}
+#step4  .card-input .money-card .services{
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#step4  .card-input .money-card .services div{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+#step4  .card-input .money-card .services div h4,
+#step4  .card-input .money-card .services div p{
+  color: #737373;
+}
+
+#step4 .card-input .total{
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#step4 .card-input .total h4{
+  color: #737373;
+}
+#step4 .card-input .total p{
+  font-size: 20px;
+  font-weight: 600;
+  color: #00297a;
+}
+/* step4 end */
+/* step5 start */
+#step5{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+#step5 img{
+  width: 60px;
+}
+#step5 div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 380px;
+}
+#step5 div p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #737373;
+} 
+
+.card-right {
+  display: none;
+}
+
+.card-right.active_card {
+  display: flex;
+}

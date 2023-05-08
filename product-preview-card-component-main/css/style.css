@@ -1,131 +1,128 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background: #ede4d8;
+body {
+  background: #ede4d8;
 }
-.card{
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    position: relative;
-    margin:100px auto;
-    background: #fff;
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+  margin: 100px auto;
+  background: #fff;
 }
-.card-img{
-    width: 80%;
+.card-img {
+  width: 80%;
 }
-.card-img img{
-    width: 80%;
-    border-radius: 5px 0 0 5px;
+.card-img img {
+  width: 80%;
+  border-radius: 5px 0 0 5px;
 }
-.card-info{
-    width: 56%;
-    padding:10px;
-    display: flex;
-    flex-direction: column;
+.card-info {
+  width: 56%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.card-info
- .perfume{
-    font-size: 15px;
-    color: #737373;
-    text-transform: uppercase;
+.card-info .perfume {
+  font-size: 15px;
+  color: #737373;
+  text-transform: uppercase;
 }
-.card-info h1{
-    width: 70%;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 20px 0;
-    line-height: 30px;
+.card-info h1 {
+  width: 70%;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+  line-height: 30px;
 }
-.card-info p{
-    font-size: 15px;
-    width: 85%;
-    color: #737373;
-    margin: 20px 0;
+.card-info p {
+  font-size: 15px;
+  width: 85%;
+  color: #737373;
+  margin: 20px 0;
 }
-.money{
-display: flex;
-justify-content: space-between;
-align-items: center;
+.money {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.money span{
-    font-size: 30px;
-    font-weight: 700;
-    color: #1b841b;
+.money span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1b841b;
 }
-del{
-    color: #737373;
+del {
+  color: #737373;
 }
-.buttons{
-    margin-top: 20px;
+.buttons {
+  margin-top: 20px;
 }
-.buttons button{
-    padding:12px 50px;
-    font-size: 15px;
-    cursor: pointer;
-    border:none;
-    background: hsl(120, 60%, 21%);
-    border-radius: 5px;
-    color: #fff;
-    transition: 1s all ease;
+.buttons button {
+  padding: 12px 50px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  background: hsl(120, 60%, 21%);
+  border-radius: 5px;
+  color: #fff;
+  transition: 1s all ease;
 }
-.buttons button:hover{
-    background: hsl(120, 65%, 40%);
+.buttons button:hover {
+  background: hsl(120, 65%, 40%);
 }
-button i{
-    color: #fff;
-    margin-right: 10px;
+button i {
+  color: #fff;
+  margin-right: 10px;
 }
 
 /* media query */
 
 @media screen and (max-width: 768px) {
-    .card {
-      flex-direction: column;
-      width: 80%;
-      margin: 50px auto;
-    }
-    
-    .card-img {
-      width: 125%;
-      margin-bottom: 20px;
-    }
-    .card-img img{
-        height: 300px;
-        border-radius: 5px 5px 0 0;
-    }
-    
-    .card-info {
-      width: 80%;
-      align-items: start;
-      justify-content: center;
-      margin-left: 30px;
-    }
-    
-    .card-info h1 {
-      width: 100%;
-      font-size: 35px;
-      line-height: 35px;
-      margin: 10px 0;
-    }
-    .malumot p{
-        line-height: 25px;
-    }
-    .money{
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .buttons button {
-        width: 130%;
-        padding: 12px 80px;
-      font-size: 13px;
-    }
+  .card {
+    flex-direction: column;
+    width: 80%;
+    margin: 50px auto;
   }
 
+  .card-img {
+    width: 125%;
+    margin-bottom: 20px;
+  }
+  .card-img img {
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+  }
 
+  .card-info {
+    width: 80%;
+    align-items: start;
+    justify-content: center;
+    margin-left: 30px;
+  }
+
+  .card-info h1 {
+    width: 100%;
+    font-size: 35px;
+    line-height: 35px;
+    margin: 10px 0;
+  }
+  .malumot p {
+    line-height: 25px;
+  }
+  .money {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .buttons button {
+    width: 130%;
+    padding: 12px 80px;
+    font-size: 13px;
+  }
+}
